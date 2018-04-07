@@ -2,9 +2,10 @@ require "application_system_test_case"
 
 class CorrectionTest < ApplicationSystemTestCase
   test "Corrige" do
-    inesLinda = true
+    #'P1' é verdadeiro se e somente se P1
+    p1 = true
     qtdVote = 0
-    while inesLinda
+    while p1
       driver = Capybara.current_session.driver
       driver.browser.manage.delete_all_cookies
       Capybara.always_include_port = false
